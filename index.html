@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>官方入口｜平台 & 在线客服</title>
+  <meta name="description" content="官方入口：一键进入平台或联系在线客服" />
+  <meta name="robots" content="noindex,nofollow" />
+  <style>
+    :root{
+      --bg:#0b1020; --card:#121a33; --text:#e8ecff; --muted:#a7b0d6;
+      --primary:#4f7cff; --success:#22c55e; --border:rgba(255,255,255,.12);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "PingFang SC", "Noto Sans CJK SC", Arial;
+      background:
+        radial-gradient(1200px 600px at 20% 10%, rgba(79,124,255,.25), transparent 55%),
+        radial-gradient(900px 500px at 90% 30%, rgba(34,197,94,.18), transparent 50%),
+        var(--bg);
+      color:var(--text);
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:22px;
+    }
+    .wrap{max-width:560px; width:100%;}
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:22px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.35);
+      backdrop-filter: blur(10px);
+    }
+    .tag{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.16);
+      background: rgba(255,255,255,.04);
+      font-size:13px;
+      color:rgba(232,236,255,.9);
+    }
+    h1{margin:14px 0 6px; font-size:22px; letter-spacing:.2px;}
+    p{margin:0; color:var(--muted); line-height:1.6; font-size:14px;}
+    .btns{display:flex; flex-direction:column; gap:12px; margin-top:18px;}
+    a.btn{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      text-decoration:none;
+      color:var(--text);
+      padding:14px 14px;
+      border-radius:14px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.04);
+      transition: transform .08s ease, background .2s ease, border-color .2s ease;
+    }
+    a.btn:hover{transform: translateY(-1px); background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.22);}
+    .left{display:flex; gap:12px; align-items:center;}
+    .icon{
+      width:40px; height:40px;
+      border-radius:12px;
+      display:grid;
+      place-items:center;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.06);
+      font-size:18px;
+    }
+    .title{font-size:15px; font-weight:800;}
+    .sub{font-size:12px; color:var(--muted); margin-top:2px;}
+    .primary{border-color: rgba(79,124,255,.40); background: rgba(79,124,255,.12);}
+    .primary .icon{background: rgba(79,124,255,.18); border-color: rgba(79,124,255,.35);}
+    .success{border-color: rgba(34,197,94,.40); background: rgba(34,197,94,.10);}
+    .success .icon{background: rgba(34,197,94,.16); border-color: rgba(34,197,94,.35);}
+    .row{display:flex; gap:10px; margin-top:14px; flex-wrap:wrap;}
+    button.small{
+      cursor:pointer;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.04);
+      color:rgba(232,236,255,.9);
+      padding:10px 12px;
+      border-radius:12px;
+      font-size:13px;
+    }
+    button.small:hover{background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.22);}
+    .foot{
+      margin-top:14px;
+      font-size:12px;
+      color:rgba(231,236,255,.60);
+      display:flex;
+      justify-content:space-between;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .hint{
+      margin-top:12px;
+      padding:10px 12px;
+      border-radius:12px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.03);
+      color: rgba(231,236,255,.70);
+      font-size:12px;
+      line-height:1.5;
+    }
+    code{background: rgba(255,255,255,.06); padding:2px 6px; border-radius:8px}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="tag">✅ 官方入口 · 选择你需要的通道</div>
+      <h1>进入平台 / 联系在线客服</h1>
+      <p>注册、充值、登录、福利咨询都可以先找客服；想直接体验也可一键进入平台。</p>
+
+      <div class="btns">
+        <a class="btn success" id="btnChat" href="https://direct.lc.chat/19158285/" target="_blank" rel="noopener">
+          <div class="left">
+            <div class="icon">💬</div>
+            <div>
+              <div class="title">在线客服（直达）</div>
+              <div class="sub">注册/充值/福利/问题处理</div>
+            </div>
+          </div>
+          <div>➜</div>
+        </a>
+
+        <a class="btn primary" id="btnPlatform" href="https://qsty725.com/r/kkp99" target="_blank" rel="noopener">
+          <div class="left">
+            <div class="icon">🎮</div>
+            <div>
+              <div class="title">进入游戏平台</div>
+              <div class="sub">直接打开官方平台页面</div>
+            </div>
+          </div>
+          <div>➜</div>
+        </a>
+      </div>
+
+      <div class="row">
+        <button class="small" id="copyThis">复制本页链接</button>
+        <button class="small" id="copyChat">复制客服链接</button>
+        <button class="small" id="copyPlatform">复制平台链接</button>
+      </div>
+
+      <div class="hint">
+        小技巧：把所有流量统一丢到这个中转页（短信/TG/WhatsApp/TikTok Bio），让用户自己选；你既能接咨询，也不耽误直接注册。
+      </div>
+
+      <div class="foot">
+        <span>© Official Entry</span>
+        <span>快捷：<code>/</code> 只做一件事：接住客户</span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const chatLink = "https://direct.lc.chat/19158285/";
+    const platformLink = "https://qsty725.com/r/kkp99";
+
+    function toast(msg){
+      const t = document.createElement("div");
+      t.textContent = msg;
+      t.style.position="fixed";
+      t.style.left="50%";
+      t.style.bottom="20px";
+      t.style.transform="translateX(-50%)";
+      t.style.padding="10px 12px";
+      t.style.borderRadius="12px";
+      t.style.background="rgba(0,0,0,.65)";
+      t.style.border="1px solid rgba(255,255,255,.18)";
+      t.style.color="rgba(255,255,255,.92)";
+      t.style.zIndex="9999";
+      document.body.appendChild(t);
+      setTimeout(()=>t.remove(), 1400);
+    }
+
+    async function copyText(text){
+      try{
+        await navigator.clipboard.writeText(text);
+        toast("已复制 ✅");
+      }catch(e){
+        const ta = document.createElement("textarea");
+        ta.value = text;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand("copy");
+        ta.remove();
+        toast("已复制 ✅");
+      }
+    }
+
+    document.getElementById("copyChat").onclick = ()=>copyText(chatLink);
+    document.getElementById("copyPlatform").onclick = ()=>copyText(platformLink);
+    document.getElementById("copyThis").onclick = ()=>copyText(window.location.href);
+
+    // 可选：如果你想“打开页面就弹客服”，取消下一行注释（会强转化，但更激进）
+    // window.addEventListener("load", ()=>window.open(chatLink, "_blank"));
+  </script>
+</body>
+</html>
